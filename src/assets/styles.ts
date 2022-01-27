@@ -50,6 +50,38 @@ export default StyleSheet.create({
   grey: { color: colors.grey },
   black: { color: colors.black },
 
+    // positions
+
+  absolute: {
+    position: 'absolute',
+  },
+  alignItemsCenter: {
+    alignItems: 'center',
+  },
+  alignItemsRight: {
+    alignItems: 'flex-end',
+  },
+  alignViaColumn: {
+    flexDirection: 'column',
+  },
+  alignViaRow: {
+    flexDirection: 'row',
+  },
+  alignViewCenter: {
+    justifyContent: 'center',
+  },
+  alignViewSplit: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  justifyBetween: {
+    justifyContent: 'space-between',
+  },
+  justifyFlexEnd: {
+    justifyContent: 'flex-end',
+  },  
+
   root: {
     flexDirection: 'row',
     borderWidth: 1,
@@ -86,8 +118,59 @@ export default StyleSheet.create({
     marginHorizontal: 1,
   },
   page: {
-    padding: 10,
-    backgroundColor: "red",
-  }
+    padding: 13,
+    paddingBottom:40,
+    backgroundColor:"#fff"
+  },
+  qtyCont: {
+    flexDirection:"row",
+    borderWidth: 1,
+    borderRadius: 5,
+    backgroundColor: "#fff",
+    borderColor: "#d1d1d1",
+    marginVertical: 5,
+    alignItems:"center",
+    justifyContent:"flex-start",
+    width:113
+  },
+  qtyBox: {
+    backgroundColor:"#dedede",
+    paddingVertical:5,
+    paddingHorizontal:15,
+  },
+  qtyText: {
+    fontSize:20,
+    color:"#48a3c6",
+    paddingHorizontal:10,
+  },
+  bigButton: {
+    backgroundColor:"#e47911",
+    alignItems:"center",
+    justifyContent:"center",
+    padding:10,
+    borderWidth:1,
+    borderRadius:10,
+    marginVertical:5,
+  },
+  imageCar: {
+    height:250,
+    marginVertical:10,
+    alignItems:'center',
+    justifyContent:'center',
+  },
+  dot: {
+    height:10,
+    width:10,
+    borderWidth:1,
+    borderRadius:10,
+    marginHorizontal:8,
+  },
+  dots: {
+    flexDirection:'row',
+    alignItems:'center',
+    justifyContent:'center',
+    flex:1,
+    margin:10,
+  },
 
 })

@@ -20,6 +20,7 @@ import {
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import ProductDetials from './src/screen/home/ProductDetials';
 import ProductScreen from './src/screen/home/ProductScreen';
 
 
@@ -33,7 +34,8 @@ const App = () => {
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ProductScreen />
+      {/* <ProductScreen /> */}
+      <ProductDetials/>
 
     </SafeAreaView>
   );
