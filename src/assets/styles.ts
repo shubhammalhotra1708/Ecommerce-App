@@ -83,13 +83,17 @@ export default StyleSheet.create({
   },  
 
   root: {
-    flexDirection: 'row',
     borderWidth: 1,
     borderRadius: 10,
     flex: 1,
     backgroundColor: "#fff",
     borderColor: "#d1d1d1",
-    margin: 5,
+    padding:5,
+    marginVertical:5,
+  },
+  qtyRoot: {
+    marginLeft:12,
+    marginVertical:8,
   },
   rightContainer: {
     marginHorizontal: 10,
@@ -120,7 +124,8 @@ export default StyleSheet.create({
   page: {
     padding: 13,
     paddingBottom:40,
-    backgroundColor:"#fff"
+    backgroundColor:"#fff",
+    marginbottom: 10,
   },
   qtyCont: {
     flexDirection:"row",
@@ -128,14 +133,14 @@ export default StyleSheet.create({
     borderRadius: 5,
     backgroundColor: "#fff",
     borderColor: "#d1d1d1",
-    marginVertical: 5,
+    marginVertical: 3,
     alignItems:"center",
     justifyContent:"flex-start",
     width:113
   },
   qtyBox: {
     backgroundColor:"#dedede",
-    paddingVertical:5,
+    paddingVertical:3,
     paddingHorizontal:15,
   },
   qtyText: {

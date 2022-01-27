@@ -2,8 +2,7 @@ import { View, Text,TouchableOpacity } from 'react-native';
 import React,{useState}from 'react';
 import styles from '../assets/styles';
 
-const QuantitySelector = () => {
-  const [qty,setQty]=useState(1);
+const QuantitySelector = ({qty,setQty}) => {
 
   return (
     <View style={styles.qtyCont}>

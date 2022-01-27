@@ -39,4 +39,17 @@ export default [
       oldPrice: 120.06,
     }
   },
+  {
+    id: '4',
+    quantity: 2,
+    item: {
+      id: '2',
+      title: "Clean Code: A Handbook of Agile Software Craftsmanship",
+      image: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/cleancode.jpg',
+      avgRating: 4.8,
+      ratings: 2989,
+      price: 32.98,
+      oldPrice: 34.06,
+    }
+  },
 ];

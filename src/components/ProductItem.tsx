@@ -17,7 +17,7 @@ interface ProductItemProps {
 
 const ProductItem = ({ item }: ProductItemProps) => {
   return (
-    <View style={styles.root}>
+    <View style={[styles.root,styles.alignViaRow]}>
       <Image style={{ flex: 2, height: 150 }} resizeMode='contain' source={{ uri: item.image }} />
       <View style={styles.rightContainer}>
         <Text numberOfLines={3} style={styles.title}>{item.title}</Text>

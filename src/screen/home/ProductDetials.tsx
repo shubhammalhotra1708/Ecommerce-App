@@ -1,5 +1,5 @@
 import {View, Text ,ScrollView} from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 import product from '../../data/product';
 import styles from '../../assets/styles';
 import PickerComp from '../../components/Picker';
@@ -8,6 +8,7 @@ import BigButton from '../../components/BigButton';
 import ImageCarousel from '../../components/ImageCarousel';
 
 const ProductDetials = () => {
+  const [qty,setQty]=useState(1);
   return (
       <ScrollView style={[styles.page]}>
 
@@ -25,7 +26,7 @@ const ProductDetials = () => {
           <Text style={{padding:10,lineHeight:25}}>{product.description}</Text>
 
           {/*quantity */}
-          <QuantitySelector/>
+          <QuantitySelector qty={qty} setQty={setQty} />
 
           {/*buttons */}
           <BigButton label="Add To Cart" color="#fff700" />
